@@ -37,7 +37,7 @@ void inserirProduto() {
             return;
         }
     }
-    cout << "Digite o preço do produto (duas casas decimais): ";
+    cout << "Digite o preco do produto (duas casas decimais): ";
     cin >> novoProduto.preco;
     produtos[totalProdutos] = novoProduto;
     totalProdutos++;
@@ -67,7 +67,7 @@ void listarProdutos() {
         return;
     }
     cout << "Lista de Produtos:" << endl;
-    cout << "Código          Nome                 Preço" << endl;
+    cout << "Código          Nome                   preco" << endl;
     cout << "------------------------------------------" << endl;
     for (int i = 0; i < totalProdutos; i++) {
         cout << setw(13) << left << produtos[i].codigo
@@ -78,7 +78,7 @@ void listarProdutos() {
 
 void consultarPreco() {
     string codigo;
-    cout << "Digite o código do produto para consultar o preço: ";
+    cout << "Digite o código do produto para consultar o preco: ";
     cin >> codigo;
 
     for (int i = 0; i < totalProdutos; i++) {
@@ -98,7 +98,7 @@ int main() {
         cout << "1. Inserir novo produto" << endl;
         cout << "2. Excluir produto cadastrado" << endl;
         cout << "3. Listar todos os produtos" << endl;
-        cout << "4. Consultar preço de um produto" << endl;
+        cout << "4. Consultar preco de um produto" << endl;
         cout << "5. Sair" << endl;
         cout << "Escolha uma opcao: ";
         cin >> opcao;
